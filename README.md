@@ -1,7 +1,7 @@
 # GraphRoam
 
 <p align="center">
-<img src="logo-graphroam.png" width="300">
+<img src="logo-graphroam.png" width="200">
 </p>
 
 
