@@ -58,7 +58,7 @@ graphroam(
 
 ## System Requirements
 
-- The size of the adjency matrix held in RAM is highly dependant on your data, for reference; a 64 million node, 500M edge graph would occupy about 8GB of RAM.
+- The size of the adjacency matrix held in RAM is highly dependent on your data, for reference; a 64 million node, 500M edge graph would occupy about 8GB of RAM.
 - A decent SSD with enough space is needed to hold the temporary and final files.
 
 ## How it Works
