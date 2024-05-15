@@ -5,7 +5,7 @@
 </p>
 
 
-**GraphRoam** is a Python library designed to efficiently generate random walks on large graphs using consumer-grade, RAM-limited hardware. By leveraging DuckDB and sparse matrix representations, GraphRoam ensures minimal memory usage while maintaining high performance.
+**GraphRoam** is a Python library designed to efficiently generate random walks on large graphs using consumer-grade, RAM-limited hardware. With DuckDB and sparse matrix representations, GraphRoam ensures minimal memory usage while maintaining high performance.
 
 ## Features
 
@@ -56,6 +56,11 @@ graphroam(
 
 - Random walks are saved as multiple CSV files in a folder called `random_walks`.
 
+## System Requirements
+
+- The size of the adjency matrix held in RAM is highly dependant on your data, for reference; a 64 million node, 500M edge graph would occupy about 8GB of RAM.
+- A decent SSD with enough space is needed to hold the temporary and final files.
+
 ## How it Works
 
 1. **Vertex Mapping**: GraphRoam uses DuckDB to efficiently map vertex names to integers.
@@ -75,22 +80,6 @@ graphroam(
     ├── walk_2.csv
     └── ...
 ```
-
-## Example
-
-```python
-from graphroam import graphroam
-
-# Perform random walks on a sample graph
-graphroam(
-    source_target_parquet='sample_graph.parquet',
-    walks_per_node=20,
-    max_steps_per_node=100,
-    mem_limit=8,
-    workers=4
-)
-```
-
 
 ## License
 
