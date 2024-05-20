@@ -3,3 +3,6 @@ numpy>=1.26.4
 pyarrow>=16.0.0
 scipy>=1.13.0
 pyarrow>=16.0.0
+GraphRoam~=0.1.0
+pytest~=8.2.1
+setuptools~=65.5.1

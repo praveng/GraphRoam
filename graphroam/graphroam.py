@@ -53,6 +53,7 @@ def get_int_edges(source_target_parquet, mem_limit=32):
 
     dataset = ParquetFile('unique_nodes.parquet')
     node_count = dataset.metadata.num_rows
+    os.remove('unique_nodes.parquet')
 
     return node_count,  edges_result
 
